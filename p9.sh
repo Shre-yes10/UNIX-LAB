@@ -6,12 +6,12 @@ echo "Enter Descriptor : "
 read desc
 
 echo
-if [[ $code=~[0-9]+$ ]]
+if [[ $code =~ ^[0-9]+$ ]]
 then
-	if [[ $desc=~^[a-zA-Z]+$ ]]
+	if [[ $desc =~ ^[a-zA-Z]+$ ]]
 	then
 		echo "$code $desc added successfully"
-		echo $code $desc | cat>>desig.lst
+		echo "$code - $desc" >>desig.lst
 	else
 		echo "$desc is not an alphabet string"
 	fi
