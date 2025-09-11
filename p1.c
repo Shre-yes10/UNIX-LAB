@@ -3,8 +3,9 @@
 
 int main(int argc,char *argv[])
 {
+
+	FILE *fp;
 	char buffer[100];
-        FILE *fp;
 
 	if(argc!=2)
 	{

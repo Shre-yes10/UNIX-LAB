@@ -4,6 +4,7 @@
 
 int main(int argc,char *argv[])
 {
+
 	FILE *source,*dest;
         char buffer[SIZE];
         size_t bytes_read=0;
