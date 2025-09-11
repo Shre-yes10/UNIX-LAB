@@ -3,14 +3,15 @@
 
 int main(int argc,char *argv[])
 {
+	char buffer[100];
+        FILE *fp;
+
 	if(argc!=2)
 	{
 		printf("USAGE : command(./a.out) filename(example.txt)\n");
 		exit(1);
 	}
 
-	char buffer[100];
-	FILE *fp
 	fp=fopen(argv[1],"r");
 
 	if(fp==NULL)
