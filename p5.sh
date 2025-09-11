@@ -11,7 +11,7 @@ fi
 echo "Enter Pattern : "
 read pat
 
-grep "$pat" "$file"
+grep -o "$pat" "$file"
 if [ $? -eq 0 ]
 then
 	echo "Pattern Found"
