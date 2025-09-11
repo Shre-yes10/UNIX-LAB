@@ -10,7 +10,7 @@ int main(int argc,char *argv[])
 	}
 
 	char buffer[100];
-	FILE *fp;
+	FILE *fp
 	fp=fopen(argv[1],"r");
 
 	if(fp==NULL)
