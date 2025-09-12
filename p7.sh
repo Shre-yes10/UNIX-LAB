@@ -7,11 +7,11 @@ read ch
 
 case $ch in
 	1)ps;;
-	2)$SHELL;;
+	2)echo $SHELL;;
 	3)who;;
 	4)whoami;;
 	5)date;;
-	6)$USER;;
+	6)echo $USER;;
 	7)pwd;;
 	8)echo "Exiting..."
 		exit 1;;
